@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Response</title>
+</head>
+<body>
+
+<table  border="1" align="center">
+    <tr >
+        <th>Name</th>
+        <th>Date</th>
+        <th>City</th>
+        <th>Info</th>
+    </tr>
+   {% for id in search %}
+    <tr>
+    <td>{{id.get_name()}}</td>
+    <td>{{id.get_date()}}</td>
+    <td>{{id.get_city()}}</td>
+    <td>{{id.get_info()}}</td>
+    </tr>
+    {% endfor%}
+</table>
+</body>
+</html>
